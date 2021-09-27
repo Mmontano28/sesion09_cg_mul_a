@@ -43,6 +43,7 @@ function init() {
     scene.add(axes);
 
     Cubo = [];   // Definir un array unidimensional
+    /*
     Cubo.push(cubo(4, 4, 4, 0xFFDD00, 'Standard', false));
     Cubo.push(cubo(4, 4, 4, 0x6FA8DC, 'Physical', false));
     Cubo.push(cubo(4, 4, 4, 0x0000FF, 'Lambert', false));
@@ -53,7 +54,13 @@ function init() {
     Cubo[1].position.set(0, 8, 0);
     Cubo[2].position.set(0, 12, 0);
     Cubo[3].position.set(0, 16, 0);
-    Cubo[4].position.set(0, 20, 0);
+    Cubo[4].position.set(0, 20, 0);*/
+
+    for(var i=0; i<5; i++)
+    {
+      Cubo.push(cubo(4, 4, 4, 0xFFFFFF, 'Standard', false));
+      Cubo[i].position.set(0, 4+(i*4), 0);
+    }
     //Luz (requerida para el material MeshLambertMaterial)
     light = new THREE.PointLight(0xFFFFFF); //  Luz proveniente de un punto en el espacio, 
                                         //  semejante al sol.
