@@ -59,7 +59,7 @@ function init() {
     for(var i=0; i<5; i++) //Estructura de repitición
     {
       Cubo.push(cubo(4, 4, 4, 0xFFFFFF, 'Standard', false));
-      Cubo[i].position.set(0, 4+(i*4.1), 0);
+      Cubo[i].translateY(4+(i*4.1));
     }
     //Luz (requerida para el material MeshLambertMaterial)
     light = new THREE.PointLight(0xFFFFFF); //  Luz proveniente de un punto en el espacio, 
