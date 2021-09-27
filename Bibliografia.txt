@@ -1,0 +1,8 @@
+Para metodo Translate
+
+https://threejs.org/docs/#api/en/core/BufferGeometry.translate
+https://thefiveplanets.org/blog/three-js-pimeros-pasos/
+
+Para los bucles
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration
